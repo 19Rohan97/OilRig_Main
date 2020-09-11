@@ -1,62 +1,10 @@
-/******************************** BACK-TO-TOP BUTTON ******************************************/
-
-const backToTopButton = document.querySelector("#back-to-top-btn");
-
-window.addEventListener("scroll", scrollFunction);
-
-function scrollFunction() {
-  if (window.pageYOffset > 300) {
-    // Show backToTopButton
-    if (!backToTopButton.classList.contains("btnEntrance")) {
-      backToTopButton.classList.remove("btnExit");
-      backToTopButton.classList.add("btnEntrance");
-      backToTopButton.style.display = "block";
-    }
-  } else {
-    // Hide backToTopButton
-    if (backToTopButton.classList.contains("btnEntrance")) {
-      backToTopButton.classList.remove("btnEntrance");
-      backToTopButton.classList.add("btnExit");
-      setTimeout(function () {
-        backToTopButton.style.display = "none";
-      }, 250);
-    }
-  }
-}
-
-backToTopButton.addEventListener("click", smoothScrollBackToTop);
-
-// function backToTop() {
-//   window.scrollTo(0, 0);
-// }
-
-function smoothScrollBackToTop() {
-  const targetPosition = 0;
-  const startPosition = window.pageYOffset;
-  const distance = targetPosition - startPosition;
-  const duration = 750;
-  let start = null;
-
-  window.requestAnimationFrame(step);
-
-  function step(timestamp) {
-    if (!start) start = timestamp;
-    const progress = timestamp - start;
-    window.scrollTo(
-      0,
-      easeInOutCubic(progress, startPosition, distance, duration)
-    );
-    if (progress < duration) window.requestAnimationFrame(step);
-  }
-}
-
 /*********************************** 
  SHOPPING CART AND IMAGES TO BE ADDED DYNAMICALLY ******************************************/
 
 const menu = [
   {
     id: 1,
-    title: "buttermilk pancakes",
+    title: "10W30",
     category: "Liquimoly/Street",
     price: 15.99,
     img: "./images/Liquimoly_Images/Street/10W30.jpg",
@@ -64,7 +12,7 @@ const menu = [
   },
   {
     id: 2,
-    title: "diner double",
+    title: "10W40",
     category: "Liquimoly/Street",
     price: 13.99,
     img: "./images/Liquimoly_Images/Street/10W40.jpg",
@@ -72,7 +20,7 @@ const menu = [
   },
   {
     id: 3,
-    title: "godzilla milkshake",
+    title: "15W50(1L)",
     category: "Liquimoly/Street",
     price: 6.99,
     img: "./images/Liquimoly_Images/Street/15W50(1L).jpg",
@@ -80,7 +28,7 @@ const menu = [
   },
   {
     id: 4,
-    title: "country delight",
+    title: "15W50(4L)",
     category: "Liquimoly/Street",
     price: 20.99,
     img: "./images/Liquimoly_Images/Street/15W50(4L).jpg",
@@ -88,7 +36,7 @@ const menu = [
   },
   {
     id: 5,
-    title: "egg attack",
+    title: "20W50",
     category: "Liquimoly/Street",
     price: 22.99,
     img: "./images/Liquimoly_Images/Street/20W50.jpg",
@@ -96,7 +44,7 @@ const menu = [
   },
   {
     id: 6,
-    title: "oreo dream",
+    title: "5W40",
     category: "Liquimoly/Street-Race",
     price: 18.99,
     img: "./images/Liquimoly_Images/Street%20Race/5W40.jpg",
@@ -104,7 +52,7 @@ const menu = [
   },
   {
     id: 7,
-    title: "bacon overflow",
+    title: "10W40",
     category: "Liquimoly/Street-Race",
     price: 8.99,
     img: "./images/Liquimoly_Images/Street%20Race/10W40.jpeg",
@@ -112,7 +60,7 @@ const menu = [
   },
   {
     id: 8,
-    title: "american classic",
+    title: "10W50",
     category: "Liquimoly/Street-Race",
     price: 12.99,
     img: "./images/Liquimoly_Images/Street%20Race/10W50.jpg",
@@ -120,7 +68,7 @@ const menu = [
   },
   {
     id: 9,
-    title: "quarantine buddy",
+    title: "10W60",
     category: "Liquimoly/Street-Race",
     price: 16.99,
     img: "./images/Liquimoly_Images/Street%20Race/10W60.jpg",
@@ -128,7 +76,7 @@ const menu = [
   },
   {
     id: 10,
-    title: "steak dinner",
+    title: "Brake Fluid",
     category: "Brake-Fluid",
     price: 39.99,
     img: "./images/Liquimoly_Images/brake-fluid.jpg",
