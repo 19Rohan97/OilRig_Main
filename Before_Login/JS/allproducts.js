@@ -153,8 +153,8 @@ function displayMenuItems(menuItems) {
           <img src=${item.img} alt=${item.title} class="photo" />
           <div class="item-info">
             <header>
-              <h4 class="text-white">${item.title}</h4>
-              <h4 class="price text-success">$${item.price}</h4>
+              <h4 class="text-white font-weight-bolder">${item.title}</h4>
+              <h4 class="price text-success">₹${item.price}</h4>
             </header>
             <p class="item-text text-muted">${item.desc}</p>
             <p></p>
