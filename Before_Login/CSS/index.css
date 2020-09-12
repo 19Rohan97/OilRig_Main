@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Bitter:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
 * {
   padding: 0;
@@ -147,6 +148,41 @@ body {
   }
 } */
 
+/* BANNER AD */
+
+.banner{
+  width: 100%;
+  background: url(http://s6.favim.com/orig/150112/background-cold-gif-nature-Favim.com-2380226.gif);
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 1.5rem;
+}
+.big-text{
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'Pacifico', cursive;
+}
+.banner a{
+  font-size: 1rem;
+  font-weight: 600;
+  display: inline-block;
+  background: #fff;
+  color: #333;
+  margin: 0 0.8rem 0.8rem 0.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0.6rem;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+.banner a:hover{
+  background: #4481eb;
+  color: #fff;
+  transform: scale(1.1);
+
+}
+
 /* NAVIGATION BAR */
 
 nav {
@@ -228,6 +264,17 @@ nav {
 }
 
 /* RESPONSIVE IMAGE PREVIEW SLIDER */
+.slider-heading{
+  display: block;
+  margin: 1rem auto;
+}
+.slider-heading h1{
+  display: inline;
+  text-transform: uppercase;
+}
+.slider-heading small{
+  font-size: 1rem;
+}
 
 .swiper-container {
   width: 100%;
@@ -243,6 +290,11 @@ nav {
   height: 200px;
   -webkit-box-reflect: below 1px
     linear-gradient(transparent, transparent, #0006);
+}
+@media(max-width:768px){
+  .slider-heading h1{
+    display: block;
+  }
 }
 
 /* TESTIMONIAL SLIDER */

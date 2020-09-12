@@ -167,39 +167,17 @@ nav {
 
 /* IMAGE GRID */
 
-.grid-container {
-  max-width: 760px;
-  margin: auto;
-  border: #000000 solid 3px;
-  background: #000000;
+.gallery{
+  margin: 10px 50px;
 }
-
-.main-img img,
-.imgs img {
-  width: 100%;
+.gallery img{
+  transition: 1s;
+  padding: 15px;
+  width: 200px;
 }
-
-.imgs {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 5px;
-  margin-top: 5px;
-}
-
-.imgs img {
-  cursor: pointer;
-}
-
-/* Fade in animation */
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-  }
-}
-
-.fade-in {
-  opacity: 0;
-  animation: fadeIn var(--fade-time) ease-in 1 forwards;
+.gallery img:hover{
+  filter: grayscale(100%);
+  transform: scale(1.1);
 }
 
 /* FOOTER */
