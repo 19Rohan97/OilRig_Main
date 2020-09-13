@@ -169,15 +169,24 @@ nav {
 
 .gallery{
   margin: 10px 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 .gallery img{
   transition: 1s;
   padding: 15px;
-  width: 200px;
+  max-width: 200px;
 }
 .gallery img:hover{
   filter: grayscale(100%);
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .gallery{
+  grid-template-columns: repeat(1, 1fr);
+
+  }
 }
 
 /* FOOTER */
