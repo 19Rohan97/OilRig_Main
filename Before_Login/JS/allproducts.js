@@ -82,6 +82,102 @@ const menu = [
     img: "./images/Liquimoly_Images/brake-fluid.jpg",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  {
+    id: 11,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/5W30-Compatible.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 12,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/5W30-Leichluf.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 13,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/5W40.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 14,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/10W40(1L).jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 15,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/10W40(4L).jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 16,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/15W40(1L).jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 17,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/15W40(4L).jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 18,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/75W90.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 19,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/ATF-Smooth.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 20,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/CVT-ATF-Oil.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 21,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/Injection-Cleaner.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
+  {
+    id: 22,
+    title: "5W30",
+    category: "Meguin",
+    price: 39.99,
+    img: "./images/Meguin_Images/Radiator-Cleaner.jpg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
 ];
 
 const sectionCenter = document.querySelector(".section-center");
@@ -122,7 +218,7 @@ window.addEventListener("DOMContentLoaded", function () {
   );
   const categoryBtns = categories
     .map(function (category) {
-      return `<button class="filter-btn" type="button" data-id=${category}>${category}</button>`;
+      return `<button id=${category} class="filter-btn" type="button" data-id=${category}>${category}</button>`;
     })
     .join("");
   container.innerHTML = categoryBtns;
@@ -149,6 +245,7 @@ window.addEventListener("DOMContentLoaded", function () {
 function displayMenuItems(menuItems) {
   let displayMenu = menuItems.map(function (item) {
     let result = `
+      
         <article class="menu-item">
           <img src=${item.img} alt=${item.title} class="photo" />
           <div class="item-info">
@@ -163,6 +260,7 @@ function displayMenuItems(menuItems) {
               <i class="fas fa-shopping-cart"></i>Buy Now
             </button>
         </article>
+      
     `;
     return result;
   });

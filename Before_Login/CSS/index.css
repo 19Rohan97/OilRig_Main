@@ -148,13 +148,69 @@ body {
   }
 } */
 
+/* ALL PRODUCTS BUTTON */
+
+.all-products-btn {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  z-index: 5;
+  transform: translate(82%);
+  transition: 0.3s ease-in-out;
+}
+.all-products-btn:hover {
+  transform: translate(0);
+}
+
+.all-products-btn a {
+  background-color: #4481eb;
+  padding: 0.8rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+.all-products-btn-mobile {
+  display: none;
+}
+@media (max-width: 768px) {
+  .all-products-btn {
+    display: none;
+  }
+  .all-products-btn-mobile {
+    display: block;
+    position: fixed;
+    right: 10px;
+    top: 50%;
+    z-index: 5;
+    padding: 0;
+    margin: 0;
+    background-color: #4481eb;
+  }
+  .all-products-btn-mobile a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    background-color: #4481eb;
+    padding: 0 1rem;
+    margin: 0;
+  }
+  .all-products-btn-mobile a:nth-child(1){
+    padding-top: 0.3rem;
+  }
+  .all-products-btn-mobile a:nth-child(8){
+    padding-bottom: 0.3rem;
+  }
+}
+
 /* BANNER AD */
 
 .banner .zig-zag:after {
   background: linear-gradient(-45deg, transparent 16px, #4481eb 0),
     linear-gradient(45deg, transparent 16px, #4481eb 0);
   background-repeat: repeat-x;
-  background-position: left bottom;  
+  background-position: left bottom;
   background-size: 22px 32px;
   content: "";
   display: block;
@@ -181,7 +237,7 @@ body {
   display: inline-block;
   background: #fff;
   color: #333;
-  margin: 0 0.8rem 0.8rem 0.8rem;
+  margin: 0 0.8rem 1rem 0.8rem;
   text-transform: uppercase;
   text-decoration: none;
   padding: 0.4rem 0.6rem;
