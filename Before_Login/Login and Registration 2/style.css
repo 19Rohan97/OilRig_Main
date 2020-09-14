@@ -255,6 +255,9 @@ form.sign-in-form {
   z-index: 10;
   /* margin-top: -20%; */
 }
+.logo img{
+  max-width: 100%;
+}
 
 .logo a {
   text-decoration: none;
@@ -444,6 +447,10 @@ form.sign-in-form {
 }
 
 @media (max-width: 570px) {
+  .logo img{
+    max-width: 100px;
+    border: 1px solid;
+  }
   form {
     padding: 0 1.5rem;
   }

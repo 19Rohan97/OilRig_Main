@@ -1,3 +1,5 @@
+/******************************** BANNER AD ******************************************/
+
 /******************************** BACK-TO-TOP BUTTON ******************************************/
 
 const backToTopButton = document.querySelector("#back-to-top-btn");
@@ -49,7 +51,6 @@ function smoothScrollBackToTop() {
     if (progress < duration) window.requestAnimationFrame(step);
   }
 }
-
 
 /******************************** TESTIMONIALS ******************************************/
 
