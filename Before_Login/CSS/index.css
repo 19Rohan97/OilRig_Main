@@ -260,7 +260,6 @@ a {
     max-height: 100%;
     padding-top: 0.3rem;
   }
-  
 }
 
 /* NAVIGATION BAR */
@@ -961,7 +960,9 @@ nav {
   }
 
   .testim .cont div p {
-    line-height: 25px;
+    line-height: 20px;
+    text-align: justify;
+    font-size: 0.8rem;
   }
 }
 
