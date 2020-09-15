@@ -206,30 +206,20 @@ body {
 
 /* BANNER AD */
 
-.banner .zig-zag:after {
-  background: linear-gradient(-45deg, transparent 16px, #4481eb 0),
-    linear-gradient(45deg, transparent 16px, #4481eb 0);
-  background-repeat: repeat-x;
-  background-position: left bottom;
-  background-size: 22px 32px;
-  content: "";
-  display: block;
-  height: 3vh;
-}
 a {
   text-decoration: none !important;
 }
 .banner {
   width: 100%;
-  height: 18vh;
+  height: 15vh;
   color: #fff;
   text-align: center;
 }
 .big-text {
-  max-height: 10vh;
   font-size: 1.5rem;
   font-weight: 500;
   padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
   background: #4481eb;
 }
 .typewriter {
@@ -239,6 +229,13 @@ a {
   letter-spacing: 0.15em; /* Adjust as needed */
   animation: typing 5.5s steps(100, end), blink-caret 1s step-end infinite;
   font-family: "Pacifico", cursive;
+}
+.typewriter span {
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: rgb(9, 255, 0);
+  font-weight: 700;
 }
 
 /* The typing effect */
@@ -259,6 +256,13 @@ a {
     font-size: 1rem;
     max-height: 100%;
     padding-top: 0.3rem;
+  }
+  .typewriter span {
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: rgb(9, 255, 0);
+    font-weight: 700;
   }
 }
 
