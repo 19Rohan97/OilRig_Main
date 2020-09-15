@@ -18,8 +18,17 @@
       <h3>Get notified when we come online</h3>
       <div class="subscribe">
         <input type="email" name="email" placeholder="Enter your email" />
-        <button type="submit">notify me</button>
+        <button type="submit" id="submit" onclick="showMessage()">
+          notify me
+        </button>
       </div>
     </div>
+
+    <script>
+      function showMessage() {
+        alert("You will be notified...");
+        location.reload();
+      }
+    </script>
   </body>
 </html>
