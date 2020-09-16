@@ -412,10 +412,15 @@ nav {
 .item-info h4 {
   margin-bottom: 0.5rem;
 }
+.item-title{
+  font-weight: 500 !important;
+  font-size: 14px;
+}
 .price {
   color: var(--clr-gold);
 }
 .item-text {
+  font-size: 12px;
   margin-bottom: 0;
   padding-top: 1rem;
 }

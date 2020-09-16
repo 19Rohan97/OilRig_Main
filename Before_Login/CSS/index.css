@@ -346,26 +346,57 @@ nav {
   background-repeat: no-repeat !important;
 }
 
+/* Product Listing */
+
+.section-2 .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.section-2 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.section-2 .swiper-slide img{
+  max-width: 100%;
+}
+
 /* RESPONSIVE IMAGE PREVIEW SLIDER */
-.slider-heading {
+.section-1 .slider-heading {
   display: block;
   margin: 1rem auto;
 }
-.slider-heading h1 {
+.section-1 .slider-heading h1 {
   display: inline;
   text-transform: uppercase;
 }
-.slider-heading small {
+.section-1 .slider-heading small {
   font-size: 1rem;
 }
 
-.swiper-container {
+.section-1 .swiper-container {
   width: 100%;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
-.swiper-slide {
+.section-1 .swiper-slide {
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
@@ -375,7 +406,7 @@ nav {
     linear-gradient(transparent, transparent, #0006);
 }
 @media (max-width: 768px) {
-  .slider-heading h1 {
+  .section-1 .slider-heading h1 {
     display: block;
   }
 }
